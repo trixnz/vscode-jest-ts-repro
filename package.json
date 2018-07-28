@@ -1,0 +1,39 @@
+{
+  "name": "vscode-jest-ts-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "jest": "^23.4.2",
+    "ts-jest": "^23.0.1",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/test/**/*.(spec|test).(ts|js)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!**/node_modules/**"
+    ]
+  }
+}
